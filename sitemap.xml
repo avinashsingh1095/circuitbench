@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Before deployment, replace the host in every location with the site's real HTTPS origin. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/calculators/ohms-law.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/calculators/led-resistor.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/calculators/voltage-divider.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/calculators/resistor-color-code.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/calculators/electrical-power.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/tutorials/</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/tutorials/ohms-law-basics.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/tutorials/led-current-limiting.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/tutorials/voltage-divider-basics.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/tutorials/resistor-power-rating.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/tutorials/resistor-color-bands.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/tutorials/arduino-led-safely.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/tutorials/arduino-analog-input.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/tutorials/esp32-input-voltage.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/tutorials/esp32-pwm-basics.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/tutorials/multimeter-troubleshooting.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/about.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/contact.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/privacy.html</loc></url>
-  <url><loc>https://REPLACE-WITH-YOUR-DOMAIN/disclaimer.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/calculators/ohms-law.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/calculators/led-resistor.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/calculators/voltage-divider.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/calculators/resistor-color-code.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/calculators/electrical-power.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/tutorials/</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/tutorials/ohms-law-basics.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/tutorials/led-current-limiting.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/tutorials/voltage-divider-basics.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/tutorials/resistor-power-rating.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/tutorials/resistor-color-bands.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/tutorials/arduino-led-safely.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/tutorials/arduino-analog-input.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/tutorials/esp32-input-voltage.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/tutorials/esp32-pwm-basics.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/tutorials/multimeter-troubleshooting.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/about.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/contact.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/privacy.html</loc></url>
+  <url><loc>https://avinashsingh1095.github.io/circuitbench/disclaimer.html</loc></url>
 </urlset>

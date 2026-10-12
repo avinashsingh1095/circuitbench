@@ -162,6 +162,9 @@ const handlers = {
     const second = $(`[name="band2"]`, form).value;
     const multiplier = $(`[name="multiplier"]`, form).value;
     const tolerance = $(`[name="tolerance"]`, form).value;
+    if (![digits[first], digits[second], multipliers[multiplier], tolerances[tolerance]].every(Number.isFinite)) {
+      throw new Error("Select a supported color for each resistor band.");
+    }
     const value = (digits[first] * 10 + digits[second]) * multipliers[multiplier];
     if (!Number.isFinite(value) || value <= 0) throw new Error("The selected bands do not form a supported positive resistance.");
     setResult(`Resistance: ${withUnit(value, "Ω")}`, [["Tolerance", `±${format(tolerances[tolerance])}%`], ["Nominal range", `${withUnit(value * (1 - tolerances[tolerance] / 100), "Ω")} to ${withUnit(value * (1 + tolerances[tolerance] / 100), "Ω")}`]]);
