@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Four-Band Resistor Color Code Calculator — CircuitBench</title>
+  <meta name="description" content="Decode the significant digits, multiplier, tolerance, and nominal range of a four-band resistor.">
+  <link rel="canonical" href="https://REPLACE-WITH-YOUR-DOMAIN/calculators/resistor-color-code.html">
+  <script>try { const savedTheme = localStorage.getItem("circuitbench-theme"); document.documentElement.dataset.theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch { document.documentElement.dataset.theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; }</script>
+  <link rel="stylesheet" href="../assets/styles.css"><script src="../assets/calculators.js" defer></script>
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="header-inner"><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">CB</span>CircuitBench</a><nav class="site-nav" aria-label="Main navigation"><a href="../index.html">Home</a><a href="ohms-law.html" aria-current="page">Calculators</a><a href="../tutorials/index.html">Tutorials</a><a href="../about.html">About</a><button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to night mode" aria-pressed="false" hidden><span class="theme-toggle-icon" data-theme-icon aria-hidden="true">☾</span><span data-theme-label>Night mode</span></button></nav></div></header>
+<noscript><p class="noscript">Enable JavaScript to use this calculator. Band tables and explanation are available below.</p></noscript>
+<main id="main" class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="ohms-law.html">Calculators</a> / Resistor color code</nav>
+  <header class="page-heading"><span class="eyebrow">Calculator 04</span><h1>Four-band resistor color code</h1><p>Select the bands in order: first significant digit, second significant digit, multiplier, then tolerance. This tool decodes four-band resistors only.</p></header>
+  <div class="calculator-layout">
+    <form class="calculator-card" data-calculator="colors" novalidate>
+      <div class="form-grid">
+        <div class="field"><label for="band1">Band 1 — first digit</label><select id="band1" name="band1"><option value="brown">Brown — 1</option><option value="red">Red — 2</option><option value="orange">Orange — 3</option><option value="yellow">Yellow — 4</option><option value="green">Green — 5</option><option value="blue">Blue — 6</option><option value="violet">Violet — 7</option><option value="gray">Gray — 8</option><option value="white">White — 9</option></select></div>
+        <div class="field"><label for="band2">Band 2 — second digit</label><select id="band2" name="band2"><option value="black">Black — 0</option><option value="brown">Brown — 1</option><option value="red">Red — 2</option><option value="orange">Orange — 3</option><option value="yellow">Yellow — 4</option><option value="green">Green — 5</option><option value="blue">Blue — 6</option><option value="violet">Violet — 7</option><option value="gray">Gray — 8</option><option value="white">White — 9</option></select></div>
+        <div class="field"><label for="multiplier">Band 3 — multiplier</label><select id="multiplier" name="multiplier"><option value="black">Black — ×1</option><option value="brown">Brown — ×10</option><option value="red">Red — ×100</option><option value="orange">Orange — ×1,000</option><option value="yellow">Yellow — ×10,000</option><option value="green">Green — ×100,000</option><option value="blue">Blue — ×1,000,000</option><option value="violet">Violet — ×10,000,000</option><option value="gold">Gold — ×0.1</option><option value="silver">Silver — ×0.01</option></select></div>
+        <div class="field"><label for="tolerance">Band 4 — tolerance</label><select id="tolerance" name="tolerance"><option value="brown">Brown — ±1%</option><option value="red">Red — ±2%</option><option value="green">Green — ±0.5%</option><option value="blue">Blue — ±0.25%</option><option value="violet">Violet — ±0.1%</option><option value="gray">Gray — ±0.05%</option><option value="gold" selected>Gold — ±5%</option><option value="silver">Silver — ±10%</option></select></div>
+      </div>
+      <div class="band-preview" data-band-preview aria-label="Selected resistor bands"></div>
+      <p class="error-message" data-error role="alert" hidden></p><div class="form-actions"><button class="button" type="submit">Decode bands</button><button class="button button-secondary" type="reset">Reset bands</button></div>
+    </form>
+    <section class="result-card" aria-live="polite" aria-atomic="true"><h2>Result</h2><div data-output><p class="result-placeholder">Select four bands and choose Decode bands.</p></div></section>
+  </div>
+  <article class="content-prose"><h2>How the bands work</h2><p>The first two bands form a two-digit number. Multiply by the third band's factor to get nominal resistance; the fourth band states the tolerance. The calculator shows the resulting minimum-to-maximum nominal range. Band conventions can vary for components outside the four-band scheme.</p>
+  <h2>Worked example</h2><p>Brown, black, red, gold means 10 × 100 = <strong>1,000 Ω (1 kΩ)</strong>, with ±5% tolerance. Its nominal range is 950 Ω to 1,050 Ω. Inspect the actual component and its datasheet when exact identification matters.</p>
+  <h2>Color digit reference</h2><p>Black 0, brown 1, red 2, orange 3, yellow 4, green 5, blue 6, violet 7, gray 8, white 9. Gold and silver are used here for multiplier or tolerance bands, not significant digits.</p></article>
+</main>
+<footer class="site-footer"><div class="footer-inner"><section class="author-card" aria-labelledby="footer-author-heading"><h2 id="footer-author-heading">About the Author</h2><p class="author-name">Avinash Paviya</p><p>I am an Electrical and Computer Engineering student at MITS, Gwalior. I am interested in electronics, programming, Arduino, ESP32, embedded systems, engineering calculators, and practical technology projects.</p><p>I created CircuitBench to make electronics and engineering concepts easier to understand through free online tools, practical tutorials, clear explanations, and real-world examples.</p></section><nav class="footer-links" aria-label="Footer navigation"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy Policy</a><a href="../disclaimer.html">Disclaimer</a></nav><div class="copyright">© <span data-current-year></span> CircuitBench. All rights reserved.</div></div></footer>
+<script defer src="../assets/site.js"></script>
+</body></html>
