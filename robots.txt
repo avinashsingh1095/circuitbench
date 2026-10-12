@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://avinashsingh1095.github.io/circuitbench/sitemap.xml
+Sitemap: https://circuitbench1.netlify.app/sitemap.xml

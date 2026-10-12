@@ -48,7 +48,7 @@ CircuitBench is a static site made with HTML5, CSS3, and vanilla JavaScript. It 
 - The day/night toggle is in each page's main navigation. It follows the device preference by default and saves an explicit visitor selection in that browser's local storage; see `privacy.html`.
 - Calculator code, formulas, validation, and result formatting are in `assets/calculators.js`. Keep each calculator's on-page formula and worked example in sync when changing its handler.
 - Tutorial pages remain visibly marked as reviewed drafts: calculations and cited API usage received a content review, but no physical circuit, board sketch, or meter procedure was bench-tested. Before removing draft labels, verify the exact device documentation and run each relevant example on the named hardware; do not treat an illustrative calculation as a design approval.
-- The canonical links, `sitemap.xml`, and `robots.txt` are configured for `https://avinashsingh1095.github.io/circuitbench/`. If you publish under a different hostname or path, update those URLs to match the deployed site.
+- The canonical links, `sitemap.xml`, and `robots.txt` are configured for `https://circuitbench1.netlify.app/`. If you publish under a different hostname or path, update those URLs to match the deployed site.
 - `404.html` is automatically used as the not-found page by Netlify and many static hosts. Verify this behavior on the selected provider.
 - The Contact page provides a `mailto:` link for `avinash1919982006@gmail.com` so visitors can report possible calculator or tutorial errors. Check that inbox periodically and keep the address current; email is sent through the visitor's email provider, not by the static site.
 
@@ -81,7 +81,7 @@ You can also open `index.html` directly, but testing through the local static se
    cd "C:\Users\Hp\OneDrive\Desktop\circuitbench"
    ```
 
-3. This version is configured for the GitHub Pages project URL `https://avinashsingh1095.github.io/circuitbench/`. If you deploy to Netlify instead or attach a custom domain, update the canonical links, `sitemap.xml`, and `robots.txt` to use the final deployed site URL before sharing it.
+3. This version is configured for the Netlify site URL `https://circuitbench1.netlify.app/`. If you attach a custom domain, update the canonical links, `sitemap.xml`, and `robots.txt` to use the final deployed site URL before sharing it.
 4. In Netlify's manual deploy page, drag the **contents of the `circuitbench` folder** (including `index.html`, `assets`, `calculators`, and `tutorials`) into the upload area. Do not upload only `index.html`, and do not place the site one extra directory level down.
 5. Wait for the deploy to finish. Open the provided HTTPS site URL and run the after-deployment checklist below.
 6. If you attach a custom domain, update the canonical links, sitemap, and robots sitemap location to the final custom HTTPS URL, then redeploy. Confirm every canonical URL and sitemap URL uses that hostname.
@@ -111,7 +111,7 @@ There is no build command: the publish directory is the folder containing this R
 - [ ] Confirm About, Contact, Privacy, Disclaimer, and 404 pages are reachable and accurate for the actual deployment.
 - [ ] Check page titles and meta descriptions in each HTML file; ensure no draft policy or contact detail misrepresents the deployed site.
 - [ ] Validate `sitemap.xml` as XML, confirm every listed URL exists at the deployed host, and check `robots.txt` points to that sitemap.
-- [ ] After a hostname is chosen, add and inspect absolute canonical links for all indexable pages.
+- [ ] Confirm absolute canonical links on all indexable pages use `https://circuitbench1.netlify.app/` (or the final custom domain, if configured).
 - [ ] On the deployed site, directly open a nested calculator and tutorial URL, refresh each, and verify relative assets and links still work.
 - [ ] Open an unknown route and confirm the host serves the custom 404 page with a 404 response (not a homepage with status 200).
 - [ ] Review the hosting provider's privacy/logging behavior and update the Privacy page if deployment adds analytics, forms, cookies, or other services.
